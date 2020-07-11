@@ -24,7 +24,8 @@ int main(int argc, const char *argv[])
 
     cout << "PIXEL_NOISE: " << PIXEL_NOISE << endl;
 
-    BAProblem<USE_POSE_SIZE> baProblem(15, 300, PIXEL_NOISE, true);
+    // BAProblem<USE_POSE_SIZE> baProblem(15, 300, PIXEL_NOISE, true);
+    BAProblem<USE_POSE_SIZE> baProblem(10, 30, PIXEL_NOISE, false);
 
     ceres::Solver::Options options;
     options.linear_solver_type = ceres::SPARSE_SCHUR;
